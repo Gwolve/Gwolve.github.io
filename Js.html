@@ -1,0 +1,8 @@
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.querySelectorAll('[data-wa]').forEach(btn =>
+    btn.addEventListener('click', () => {
+      window.open(`https://wa.me/18762388032?text=` + encodeURIComponent("Hi, I’d like to book a service with Obsidian Autoworks."), '_blank')
+    })
+  );
+});

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact - Obsidian Autoworks</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="nav">
+  <a href="index.html"><strong>Obsidian Autoworks</strong></a>
+  <nav>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="section container">
+  <h1>Contact Us</h1>
+  <form class="form" name="booking" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="booking">
+    <label>Name<input name="name" required></label>
+    <label>Email<input type="email" name="email" required></label>
+    <label>Phone<input name="phone" value="+1-876-238-8032"></label>
+    <label>Service
+      <select name="service">
+        <option>Wrap</option>
+        <option>Detailing</option>
+        <option>Ceramic</option>
+        <option>Performance</option>
+      </select>
+    </label>
+    <button class="btn" type="submit">Send</button>
+  </form>
+  <button class="btn ghost" data-wa>Chat on WhatsApp</button>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>© <span id="year"></span> Obsidian Autoworks. All rights reserved.</p>
+  </div>
+</footer>
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>
